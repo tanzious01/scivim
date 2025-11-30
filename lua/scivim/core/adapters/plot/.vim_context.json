@@ -1,0 +1,202 @@
+{
+  "df_sales": {
+    "name": "df_sales",
+    "connection_file": "/tmp/tmpva7d1syu.json",
+    "metadata": {
+      "city": {
+        "dtype": "object",
+        "null_count": 0,
+        "unique_count": 3,
+        "sample_values": [
+          "New York",
+          "London",
+          "New York",
+          "London",
+          "Paris",
+          "Paris"
+        ]
+      },
+      "item": {
+        "dtype": "object",
+        "null_count": 0,
+        "unique_count": 3,
+        "sample_values": [
+          "Apple",
+          "Apple",
+          "Orange",
+          "Banana",
+          "Apple",
+          "Banana"
+        ]
+      },
+      "price": {
+        "dtype": "float64",
+        "null_count": 0,
+        "unique_count": 6,
+        "sample_values": [
+          "1.5",
+          "1.2",
+          "0.8",
+          "0.5",
+          "1.6",
+          "0.55"
+        ],
+        "min_val": 0.5,
+        "max_val": 1.6,
+        "mean_val": 1.025,
+        "std_val": 0.4356508540869244,
+        "median_val": 1.0,
+        "q1": 0.6125,
+        "q3": 1.425,
+        "outlier_count": 0,
+        "hist_counts": [
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          2
+        ]
+      },
+      "qty": {
+        "dtype": "int64",
+        "null_count": 0,
+        "unique_count": 6,
+        "sample_values": [
+          "10",
+          "20",
+          "15",
+          "30",
+          "12",
+          "40"
+        ],
+        "min_val": 10.0,
+        "max_val": 40.0,
+        "mean_val": 21.166666666666668,
+        "std_val": 10.652334120849863,
+        "median_val": 17.5,
+        "q1": 12.75,
+        "q3": 27.5,
+        "outlier_count": 0,
+        "hist_counts": [
+          2,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    "columns": [
+      "city",
+      "item",
+      "price",
+      "qty"
+    ],
+    "lib": "pandas",
+    "is_lazy": false
+  },
+  "df_sales_sql": {
+    "name": "df_sales_sql",
+    "connection_file": "/tmp/tmpva7d1syu.json",
+    "metadata": {
+      "city": {
+        "dtype": "object",
+        "null_count": 0,
+        "unique_count": 2,
+        "sample_values": [
+          "London",
+          "London",
+          "Paris"
+        ]
+      },
+      "item": {
+        "dtype": "object",
+        "null_count": 0,
+        "unique_count": 2,
+        "sample_values": [
+          "Apple",
+          "Banana",
+          "Banana"
+        ]
+      },
+      "price": {
+        "dtype": "float64",
+        "null_count": 0,
+        "unique_count": 3,
+        "sample_values": [
+          "1.2",
+          "0.5",
+          "0.55"
+        ],
+        "min_val": 0.5,
+        "max_val": 1.2,
+        "mean_val": 0.75,
+        "std_val": 0.31885210782848317,
+        "median_val": 0.55,
+        "q1": 0.525,
+        "q3": 0.875,
+        "outlier_count": 0,
+        "hist_counts": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "qty": {
+        "dtype": "int64",
+        "null_count": 0,
+        "unique_count": 3,
+        "sample_values": [
+          "20",
+          "30",
+          "40"
+        ],
+        "min_val": 20.0,
+        "max_val": 40.0,
+        "mean_val": 30.0,
+        "std_val": 8.16496580927726,
+        "median_val": 30.0,
+        "q1": 25.0,
+        "q3": 35.0,
+        "outlier_count": 0,
+        "hist_counts": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    "columns": [
+      "city",
+      "item",
+      "price",
+      "qty"
+    ],
+    "lib": "pandas",
+    "is_lazy": false
+  }
+}
