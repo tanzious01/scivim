@@ -3,6 +3,7 @@
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data/polars.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data/polars.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data/polars.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/data/polars.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data
 

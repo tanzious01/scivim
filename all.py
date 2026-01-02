@@ -2,6 +2,7 @@
 # /home/tanzious/scivim/python/scivim/daemon.py
 # /home/tanzious/scivim/python/scivim/daemon.py
 # /home/tanzious/scivim/python/scivim/daemon.py
+# /home/tanzious/scivim/python/scivim/daemon.py
 import sys
 import json
 import os
@@ -485,6 +486,7 @@ if __name__ == "__main__":
 # /home/tanzious/scivim/python/scivim/expose.py
 # /home/tanzious/scivim/python/scivim/expose.py
 # /home/tanzious/scivim/python/scivim/expose.py
+# /home/tanzious/scivim/python/scivim/expose.py
 import json
 import pandas as pd
 import numpy as np
@@ -726,6 +728,7 @@ if __name__ == "__main__":
 # /home/tanzious/scivim/python/scivim/flush.py
 # /home/tanzious/scivim/python/scivim/flush.py
 # /home/tanzious/scivim/python/scivim/flush.py
+# /home/tanzious/scivim/python/scivim/flush.py
 # /home/tanzious/scivim/python/scivim
 # /home/tanzious/scivim/python/scivim
 #this file is in /python/scivim/flush.py
@@ -775,6 +778,7 @@ def flush_kernel():
 
 if __name__ == '__main__':
     flush_kernel()
+# /home/tanzious/scivim/python/scivim/utils.py
 # /home/tanzious/scivim/python/scivim/utils.py
 # /home/tanzious/scivim/python/scivim/utils.py
 # /home/tanzious/scivim/python/scivim/utils.py
@@ -837,6 +841,7 @@ def scivim_update(df, name):
             
     except Exception as e:
         print(f"❌ Failed to snapshot: {e}")
+# /home/tanzious/scivim/OLD_ALLS/all.py
 # /home/tanzious/scivim/OLD_ALLS/all.py
 # /home/tanzious/scivim/OLD_ALLS/all.py
 # /home/tanzious/scivim/OLD_ALLS/all.py

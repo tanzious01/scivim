@@ -2,6 +2,7 @@
 -- /home/tanzious/scivim/lua/scivim/backend/client.lua
 -- /home/tanzious/scivim/lua/scivim/backend/client.lua
 -- /home/tanzious/scivim/lua/scivim/backend/client.lua
+-- /home/tanzious/scivim/lua/scivim/backend/client.lua
 -- =========================================================================
 -- CLIENT - Persistent Python Daemon Client
 -- =========================================================================

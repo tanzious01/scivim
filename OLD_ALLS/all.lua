@@ -3,6 +3,7 @@
 -- /home/tanzious/scivim/OLD_ALLS/all.lua
 -- /home/tanzious/scivim/OLD_ALLS/all.lua
 -- /home/tanzious/scivim/OLD_ALLS/all.lua
+-- /home/tanzious/scivim/OLD_ALLS/all.lua
 -- /home/tanzious/scivim/OLD_ALLS
 -- /home/tanzious/scivim/OLD_ALLS
 -- This file is in /lua/init.lua

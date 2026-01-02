@@ -2,6 +2,7 @@
 -- /home/tanzious/scivim/lua/scivim/backend/client.lua
 -- /home/tanzious/scivim/lua/scivim/backend/client.lua
 -- /home/tanzious/scivim/lua/scivim/backend/client.lua
+-- /home/tanzious/scivim/lua/scivim/backend/client.lua
 -- =========================================================================
 -- CLIENT - Persistent Python Daemon Client
 -- =========================================================================
@@ -191,6 +192,7 @@ return M
 -- /home/tanzious/scivim/lua/scivim/backend/paths.lua
 -- /home/tanzious/scivim/lua/scivim/backend/paths.lua
 -- /home/tanzious/scivim/lua/scivim/backend/paths.lua
+-- /home/tanzious/scivim/lua/scivim/backend/paths.lua
 -- /home/tanzious/scivim/lua/scivim/backend
 -- /home/tanzious/scivim/lua/scivim/backend
 -- lua/scivim/backend/paths.lua
@@ -212,6 +214,7 @@ function M.get_daemon_script()
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/core/adapters/data/pandas.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data/pandas.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data/pandas.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data/pandas.lua
@@ -254,6 +257,7 @@ return M
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data/polars.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data/polars.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data/polars.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/data/polars.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data
 
@@ -281,6 +285,7 @@ function M.normalize(df_var)
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot/bokeh.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/bokeh.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/bokeh.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/bokeh.lua
@@ -470,6 +475,7 @@ return M
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/plotly.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/plotly.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/plotly.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot/plotly.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot
 local M = {}
@@ -648,6 +654,7 @@ return M
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/seaborn.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/seaborn.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/seaborn.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot/seaborn.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot
 local M = {}
@@ -708,6 +715,7 @@ function M.show()
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/core/charts.lua
 -- /home/tanzious/scivim/lua/scivim/core/charts.lua
 -- /home/tanzious/scivim/lua/scivim/core/charts.lua
 -- /home/tanzious/scivim/lua/scivim/core/charts.lua
@@ -955,6 +963,7 @@ return M
 -- /home/tanzious/scivim/lua/scivim/core/context.lua
 -- /home/tanzious/scivim/lua/scivim/core/context.lua
 -- /home/tanzious/scivim/lua/scivim/core/context.lua
+-- /home/tanzious/scivim/lua/scivim/core/context.lua
 -- /home/tanzious/scivim/lua/scivim/core
 -- /home/tanzious/scivim/lua/scivim/core
 -- This file is in /lua/core/context.lua
@@ -1080,6 +1089,7 @@ function M._is_numeric(dtype)
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/core/generator.lua
 -- /home/tanzious/scivim/lua/scivim/core/generator.lua
 -- /home/tanzious/scivim/lua/scivim/core/generator.lua
 -- /home/tanzious/scivim/lua/scivim/core/generator.lua
@@ -1241,6 +1251,7 @@ return M
 -- /home/tanzious/scivim/lua/scivim/core/snippets.lua
 -- /home/tanzious/scivim/lua/scivim/core/snippets.lua
 -- /home/tanzious/scivim/lua/scivim/core/snippets.lua
+-- /home/tanzious/scivim/lua/scivim/core/snippets.lua
 -- /home/tanzious/scivim/lua/scivim/core
 -- /home/tanzious/scivim/lua/scivim/core
 -- This file is in /lua/core/snippets.lua
@@ -1390,6 +1401,7 @@ function M.delete(name)
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/core/stats.lua
 -- /home/tanzious/scivim/lua/scivim/core/stats.lua
 -- /home/tanzious/scivim/lua/scivim/core/stats.lua
 -- /home/tanzious/scivim/lua/scivim/core/stats.lua
@@ -1684,6 +1696,7 @@ return M
 -- /home/tanzious/scivim/lua/scivim/ui/explorer.lua
 -- /home/tanzious/scivim/lua/scivim/ui/explorer.lua
 -- /home/tanzious/scivim/lua/scivim/ui/explorer.lua
+-- /home/tanzious/scivim/lua/scivim/ui/explorer.lua
 -- /home/tanzious/scivim/lua/scivim/ui
 -- /home/tanzious/scivim/lua/scivim/ui
 --This file is in  lua/scivim/ui/explorer.lua
@@ -1938,6 +1951,7 @@ function M._render_ui()
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/ui/inspector.lua
 -- /home/tanzious/scivim/lua/scivim/ui/inspector.lua
 -- /home/tanzious/scivim/lua/scivim/ui/inspector.lua
 -- /home/tanzious/scivim/lua/scivim/ui/inspector.lua
@@ -2448,6 +2462,7 @@ return M
 -- /home/tanzious/scivim/lua/scivim/ui/layout.lua
 -- /home/tanzious/scivim/lua/scivim/ui/layout.lua
 -- /home/tanzious/scivim/lua/scivim/ui/layout.lua
+-- /home/tanzious/scivim/lua/scivim/ui/layout.lua
 -- /home/tanzious/scivim/lua/scivim/ui
 -- /home/tanzious/scivim/lua/scivim/ui
 
@@ -2491,6 +2506,7 @@ function M.toggle_scientific_mode()
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/ui/preview.lua
 -- /home/tanzious/scivim/lua/scivim/ui/preview.lua
 -- /home/tanzious/scivim/lua/scivim/ui/preview.lua
 -- /home/tanzious/scivim/lua/scivim/ui/preview.lua
@@ -2739,6 +2755,7 @@ function M.close_preview()
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/ui/transform.lua
 -- /home/tanzious/scivim/lua/scivim/ui/transform.lua
 -- /home/tanzious/scivim/lua/scivim/ui/transform.lua
 -- /home/tanzious/scivim/lua/scivim/ui/transform.lua
@@ -3280,6 +3297,7 @@ function M.inspect_transform(ctx_arg)
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
 -- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
 -- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
 -- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
@@ -3925,6 +3943,7 @@ return M
 -- /home/tanzious/scivim/lua/scivim/config.lua
 -- /home/tanzious/scivim/lua/scivim/config.lua
 -- /home/tanzious/scivim/lua/scivim/config.lua
+-- /home/tanzious/scivim/lua/scivim/config.lua
 -- /home/tanzious/scivim/lua/scivim
 -- /home/tanzious/scivim/lua/scivim
 --This file is in /lua/config.lua
@@ -4065,6 +4084,7 @@ function M.is_enabled(feature)
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/init.lua
 -- /home/tanzious/scivim/lua/scivim/init.lua
 -- /home/tanzious/scivim/lua/scivim/init.lua
 -- /home/tanzious/scivim/lua/scivim/init.lua
@@ -4269,6 +4289,7 @@ function M.setup(user_config)
 end
 
 return M
+-- /home/tanzious/scivim/OLD_ALLS/all.lua
 -- /home/tanzious/scivim/OLD_ALLS/all.lua
 -- /home/tanzious/scivim/OLD_ALLS/all.lua
 -- /home/tanzious/scivim/OLD_ALLS/all.lua

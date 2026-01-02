@@ -3,6 +3,7 @@
 -- /home/tanzious/scivim/lua/scivim/core/snippets.lua
 -- /home/tanzious/scivim/lua/scivim/core/snippets.lua
 -- /home/tanzious/scivim/lua/scivim/core/snippets.lua
+-- /home/tanzious/scivim/lua/scivim/core/snippets.lua
 -- /home/tanzious/scivim/lua/scivim/core
 -- /home/tanzious/scivim/lua/scivim/core
 -- This file is in /lua/core/snippets.lua

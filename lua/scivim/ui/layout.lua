@@ -3,6 +3,7 @@
 -- /home/tanzious/scivim/lua/scivim/ui/layout.lua
 -- /home/tanzious/scivim/lua/scivim/ui/layout.lua
 -- /home/tanzious/scivim/lua/scivim/ui/layout.lua
+-- /home/tanzious/scivim/lua/scivim/ui/layout.lua
 -- /home/tanzious/scivim/lua/scivim/ui
 -- /home/tanzious/scivim/lua/scivim/ui
 

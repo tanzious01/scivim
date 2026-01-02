@@ -3,6 +3,7 @@
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/bokeh.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/bokeh.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/bokeh.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot/bokeh.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot
 local M = {}

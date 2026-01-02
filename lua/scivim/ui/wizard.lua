@@ -3,6 +3,7 @@
 -- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
 -- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
 -- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
+-- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
 -- /home/tanzious/scivim/lua/scivim/ui
 -- /home/tanzious/scivim/lua/scivim/ui
 -- This file is in /lua/scivim/ui/wizard.lua
