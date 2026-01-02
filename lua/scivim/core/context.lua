@@ -1,3 +1,11 @@
+-- /home/tanzious/scivim/lua/scivim/core/context.lua
+-- /home/tanzious/scivim/lua/scivim/core/context.lua
+-- /home/tanzious/scivim/lua/scivim/core/context.lua
+-- /home/tanzious/scivim/lua/scivim/core/context.lua
+-- /home/tanzious/scivim/lua/scivim/core/context.lua
+-- /home/tanzious/scivim/lua/scivim/core
+-- /home/tanzious/scivim/lua/scivim/core
+-- This file is in /lua/core/context.lua
 -- =========================================================================
 -- CONTEXT - Data Loading & Management (Core)
 -- =========================================================================

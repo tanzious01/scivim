@@ -1,3 +1,10 @@
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot/plotly.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot/plotly.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot/plotly.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot/plotly.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot/plotly.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot
 local M = {}
 
 -- [[ CAPABILITIES ]]

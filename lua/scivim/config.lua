@@ -1,3 +1,11 @@
+-- /home/tanzious/scivim/lua/scivim/config.lua
+-- /home/tanzious/scivim/lua/scivim/config.lua
+-- /home/tanzious/scivim/lua/scivim/config.lua
+-- /home/tanzious/scivim/lua/scivim/config.lua
+-- /home/tanzious/scivim/lua/scivim/config.lua
+-- /home/tanzious/scivim/lua/scivim
+-- /home/tanzious/scivim/lua/scivim
+--This file is in /lua/config.lua
 -- =========================================================================
 -- CONFIG - Configuration Management
 -- =========================================================================

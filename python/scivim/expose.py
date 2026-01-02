@@ -1,5 +1,6 @@
-#/home/tanzious/.ipython/profile_default/startup
-
+# /home/tanzious/scivim/python/scivim/expose.py
+# /home/tanzious/scivim/python/scivim/expose.py
+# /home/tanzious/scivim/python/scivim/expose.py
 import json
 import pandas as pd
 import numpy as np
@@ -186,10 +187,6 @@ def commit_session_vars(session_id, session_env):
             except Exception as e:
                 print(f"⚠️ Failed to save {var_name} from session {session_id}: {e}")
 
-    # Optional: print summary
-    # print(f"✅ Saved {newly_exposed_count} new DataFrame(s) from session {session_id}.")
-
-
 def vim_expose():
     ip = get_ipython()
     if not ip: return
@@ -224,7 +221,17 @@ def auto_run_scivim(result=None):
 def register_hooks():
     ip = get_ipython()
     if not ip: return
+    
+    # 1. Defensively remove ANY existing callbacks with the same name
+    # This prevents duplicate registration on reload
+    current_callbacks = ip.events.callbacks.get('post_run_cell', [])
+    pruned_callbacks = [cb for cb in current_callbacks if cb.__name__ != 'auto_run_scivim']
+    ip.events.callbacks['post_run_cell'] = pruned_callbacks
+    
+    # 2. Run once immediately to populate state
     vim_expose()
+    
+    # 3. Register the hook exactly once
     ip.events.register('post_run_cell', auto_run_scivim)
     print("🚀 SciVim Auto-Sync Enabled")
 

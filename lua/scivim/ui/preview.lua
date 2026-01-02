@@ -1,3 +1,14 @@
+-- /home/tanzious/scivim/lua/scivim/ui/preview.lua
+-- /home/tanzious/scivim/lua/scivim/ui/preview.lua
+-- /home/tanzious/scivim/lua/scivim/ui/preview.lua
+-- /home/tanzious/scivim/lua/scivim/ui/preview.lua
+-- /home/tanzious/scivim/lua/scivim/ui/preview.lua
+-- /home/tanzious/scivim/lua/scivim/ui
+-- /home/tanzious/scivim/lua/scivim/ui
+
+
+
+--This file is in  lua/scivim/ui/preview.lua
 -- =========================================================================
 -- PREVIEW - Live Plot Preview (Matplotlib & Plotly support)
 -- =========================================================================

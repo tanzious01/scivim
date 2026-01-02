@@ -1,25 +1,40 @@
--- lua/scivim/core/generator.lua
+-- /home/tanzious/scivim/lua/scivim/core/generator.lua
+-- /home/tanzious/scivim/lua/scivim/core/generator.lua
+-- /home/tanzious/scivim/lua/scivim/core/generator.lua
+-- /home/tanzious/scivim/lua/scivim/core/generator.lua
+-- /home/tanzious/scivim/lua/scivim/core/generator.lua
+-- This file is in /lua/scivim/core/generator.lua
 local M = {}
 local config = require("scivim.config")
 
--- Helper to safely load adapters
+-- CACHE: Store loaded adapters to avoid pcall/require overhead
+local _adapter_cache = { data = {}, plot = {} }
+
+-- Helper to safely load adapters with caching
 local function load_adapter(type, name)
+  if _adapter_cache[type][name] then
+      return _adapter_cache[type][name]
+  end
+
   local ok, adapter = pcall(require, "scivim.core.adapters." .. type .. "." .. name)
   if not ok then
+    -- Don't cache nil, allow retry if user fixes config
     vim.notify("Could not load " .. type .. " adapter: " .. name, vim.log.levels.ERROR)
     return nil
   end
+  
+  _adapter_cache[type][name] = adapter
   return adapter
 end
 
--- [[ NEW: Helper to expose the active adapter to the UI ]]
+-- Expose active adapter
 function M.get_active_plot_adapter()
   local cfg = config.get()
   local plot_name = cfg.plot_backend or "seaborn"
   return load_adapter("plot", plot_name)
 end
 
--- [[ NEW: Filter charts based on backend support ]]
+-- Filter charts based on backend support
 function M.get_available_charts()
   local cfg = config.get()
   local all_charts = require("scivim.core.charts").CHART_TYPES
@@ -117,6 +132,22 @@ function M.generate(spec)
   -- 3. INSERT INTO BUFFER
   if #lines > 0 then
     vim.api.nvim_put(lines, "l", true, true)
+
+    -- [[ OPTIMIZATION: Auto-Run with Molten ]]
+    -- If Molten is installed and configured, run the block immediately
+    local has_molten = (vim.fn.exists(":MoltenEvaluateVisual") == 2)
+    
+    if has_molten and cfg.features.auto_run ~= false then
+        -- Calculate range of inserted text
+        local end_line = vim.api.nvim_win_get_cursor(0)[1]
+        local start_line = end_line - #lines + 1
+        
+        -- Run Molten on the inserted range
+        vim.cmd(string.format(":%d,%dMoltenEvaluateVisual", start_line, end_line))
+        
+        -- Move cursor to end
+        vim.api.nvim_win_set_cursor(0, {end_line, 0})
+    end
   end
 
   return lines

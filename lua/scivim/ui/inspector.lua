@@ -1,3 +1,12 @@
+-- /home/tanzious/scivim/lua/scivim/ui/inspector.lua
+-- /home/tanzious/scivim/lua/scivim/ui/inspector.lua
+-- /home/tanzious/scivim/lua/scivim/ui/inspector.lua
+-- /home/tanzious/scivim/lua/scivim/ui/inspector.lua
+-- /home/tanzious/scivim/lua/scivim/ui/inspector.lua
+-- /home/tanzious/scivim/lua/scivim/ui
+-- /home/tanzious/scivim/lua/scivim/ui
+
+--This file is in  lua/scivim/ui/inspector.lua
 -- =========================================================================
 -- INSPECTOR - Data Inspection UI (Snacks)
 -- =========================================================================

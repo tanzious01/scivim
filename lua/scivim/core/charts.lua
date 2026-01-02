@@ -1,3 +1,11 @@
+-- /home/tanzious/scivim/lua/scivim/core/charts.lua
+-- /home/tanzious/scivim/lua/scivim/core/charts.lua
+-- /home/tanzious/scivim/lua/scivim/core/charts.lua
+-- /home/tanzious/scivim/lua/scivim/core/charts.lua
+-- /home/tanzious/scivim/lua/scivim/core/charts.lua
+-- /home/tanzious/scivim/lua/scivim/core
+-- /home/tanzious/scivim/lua/scivim/core
+--This file is in /lua/core/charts.lua
 -- =========================================================================
 -- CHARTS - Visualization Definitions
 -- =========================================================================

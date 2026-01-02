@@ -1,3 +1,12 @@
+# /home/tanzious/scivim/python/scivim/flush.py
+# /home/tanzious/scivim/python/scivim/flush.py
+# /home/tanzious/scivim/python/scivim/flush.py
+# /home/tanzious/scivim/python/scivim/flush.py
+# /home/tanzious/scivim/python/scivim/flush.py
+# /home/tanzious/scivim/python/scivim
+# /home/tanzious/scivim/python/scivim
+#this file is in /python/scivim/flush.py
+
 """
 Flush Jupyter Kernel IOPub Messages
 Run this in your Jupyter kernel to clear any stuck messages

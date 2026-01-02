@@ -1,5 +1,12 @@
+-- /home/tanzious/scivim/lua/scivim/core/stats.lua
+-- /home/tanzious/scivim/lua/scivim/core/stats.lua
+-- /home/tanzious/scivim/lua/scivim/core/stats.lua
+-- /home/tanzious/scivim/lua/scivim/core/stats.lua
+-- /home/tanzious/scivim/lua/scivim/core/stats.lua
+-- /home/tanzious/scivim/lua/scivim/core
+-- /home/tanzious/scivim/lua/scivim/core
 -- =========================================================================
--- STATS - Statistical Annotations and Enhancements
+-- S-TATS - Statistical Annotations and Enhancements
 -- =========================================================================
 local M = {}
 

@@ -1,3 +1,12 @@
+-- /home/tanzious/scivim/lua/scivim/core/adapters/data/pandas.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/data/pandas.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/data/pandas.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/data/pandas.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/data/pandas.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/data
+-- /home/tanzious/scivim/lua/scivim/core/adapters/data
+--This file is in /lua/core/adapters/data/pandas.lua
+
 local M = {}
 
 -- Returns the import string required for this library

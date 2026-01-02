@@ -1,3 +1,9 @@
+-- /home/tanzious/scivim/lua/scivim/init.lua
+-- /home/tanzious/scivim/lua/scivim/init.lua
+-- /home/tanzious/scivim/lua/scivim/init.lua
+-- /home/tanzious/scivim/lua/scivim/init.lua
+-- /home/tanzious/scivim/lua/scivim/init.lua
+-- This file is in /lua/scivim/init.lua
 -- =========================================================================
 -- SCIVIM - Scientific Visualization for Neovim
 -- =========================================================================
@@ -16,7 +22,7 @@ local modules = {
   wizard    = "scivim.ui.wizard",
   preview   = "scivim.ui.preview",
   transform = "scivim.ui.transform",
-  explorer  = "scivim.ui.explorer", -- [[ NEW: Explorer Module ]]
+  explorer  = "scivim.ui.explorer", 
 }
 
 -- Auto-loader for submodules
@@ -37,7 +43,7 @@ setmetatable(M, {
 -- PUBLIC API
 -- -------------------------------------------------------------------------
 
---- Install the IPython startup script (Symlink)
+--- Install the IPython startup script (Robust Version)
 function M.install_ipython()
   local paths = require("scivim.backend.paths")
   local source = paths.get_python_root() .. "expose.py"
@@ -45,43 +51,51 @@ function M.install_ipython()
   -- 1. Determine IPython Startup Directory
   local ipython_dir = vim.fn.expand("~/.ipython/profile_default/startup/")
   if vim.fn.has("win32") == 1 then
-      -- Windows usually keeps it in %USERPROFILE%
       ipython_dir = vim.fn.expand("$USERPROFILE/.ipython/profile_default/startup/")
   end
 
-  -- 2. Create directory if it doesn't exist
   if vim.fn.isdirectory(ipython_dir) == 0 then
       vim.fn.mkdir(ipython_dir, "p")
   end
 
   local target = ipython_dir .. "99_scivim_expose.py"
 
-  -- 3. Check if source exists
+  -- 2. Check Source
   if vim.fn.filereadable(source) == 0 then
       vim.notify("❌ Could not find source file: " .. source, vim.log.levels.ERROR)
       return
   end
 
-  -- 4. Create Symlink
-  local cmd = string.format("ln -sf '%s' '%s'", source, target)
+  -- 3. Install Strategy: Symlink -> WinSymlink -> Hard Copy
+  local success = false
   
-  if vim.fn.has("win32") == 1 then
-      -- Windows mklink syntax: mklink Link Target
-      cmd = string.format("cmd /c mklink \"%s\" \"%s\"", target, source)
+  -- Attempt Unix Symlink
+  if vim.fn.has("unix") == 1 then
+      local cmd = string.format("ln -sf '%s' '%s'", source, target)
+      if vim.fn.system(cmd) == 0 then success = true end
   end
 
-  local output = vim.fn.system(cmd)
-  
-  if vim.v.shell_error == 0 then
-      vim.notify("✅ SciVim hooked into IPython successfully!\nLocation: " .. target, vim.log.levels.INFO)
+  -- Attempt Windows Symlink (Requires Admin/Dev Mode)
+  if not success and vim.fn.has("win32") == 1 then
+      local cmd = string.format("cmd /c mklink \"%s\" \"%s\"", target, source)
+      local output = vim.fn.system(cmd)
+      -- Check for success message or lack of error
+      if output and not output:lower():match("privilege") then success = true end
+  end
+
+  -- Fallback: Hard Copy
+  if not success then
+      local content = vim.fn.readfile(source)
+      vim.fn.writefile(content, target)
+      vim.notify("⚠️  Symlink failed (Permissions?). Created a HARD COPY instead.\nNote: You must reinstall if you update the plugin.", vim.log.levels.WARN)
   else
-      vim.notify("⚠️  Symlink failed (Permissions?).\nYou should manually copy:\n" .. source .. "\nTO:\n" .. target, vim.log.levels.WARN)
+      vim.notify("✅ SciVim hooked into IPython successfully!\nLocation: " .. target, vim.log.levels.INFO)
   end
 end
 
 --- Start the interactive visualization wizard
 function M.start(ctx)
-  M.wizard.start(ctx) -- Updated to accept optional context
+  M.wizard.start(ctx) 
 end
 
 --- Quick start with a specific chart type
@@ -101,7 +115,6 @@ end
 
 --- User command to launch the live transformation UI
 function M.run_transform()
-  -- Now points to the router function
   M.transform.inspect_transform()
 end
 
@@ -146,14 +159,12 @@ function M.setup(user_config)
     M.template(opts.args)
   end, { nargs = 1 })
   
-  -- [[ NEW: Explorer Command ]]
   vim.api.nvim_create_user_command("VizExplorer", function()
     require("scivim.ui.explorer").show_explorer()
   end, {})
   
   vim.api.nvim_create_user_command("VizInspect", function() M.inspect() end, {})
   
-  -- [[ UPDATED: Transform uses the Router ]]
   vim.api.nvim_create_user_command("VizTransform", function() 
     require("scivim.ui.transform").inspect_transform() 
   end, {})
@@ -168,7 +179,6 @@ function M.setup(user_config)
   vim.api.nvim_create_user_command("VizSnippets", function() M.snippets_list() end, {})
   vim.api.nvim_create_user_command("VizPreview", function() M.show_preview() end, {})
   
-  -- NEW: Installation Helper
   vim.api.nvim_create_user_command("VizInstall", function() M.install_ipython() end, {})
   
   -- Auto-reload context on file change
@@ -179,16 +189,11 @@ function M.setup(user_config)
     })
   end
 
-  -- [[ NEW: CLEANUP ON EXIT ]]
+  -- [[ CLEANUP ON EXIT ]]
   vim.api.nvim_create_autocmd("VimLeave", {
     callback = function()
-      local cache_dir = vim.fn.stdpath("cache") .. "/scivim_data"
-      -- Recursive delete (rm -rf) of the cache directory
-      if vim.fn.isdirectory(cache_dir) == 1 then
-        vim.fn.delete(cache_dir, "rf")
-      end
-      
-      -- Also stop the daemon process if running
+      -- OPTIMIZATION: Do NOT delete the data cache on exit.
+      -- Preserves data for parallel instances and faster restarts.
       require("scivim.backend.client").stop_daemon()
     end,
   })

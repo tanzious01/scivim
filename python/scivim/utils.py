@@ -1,3 +1,11 @@
+# /home/tanzious/scivim/python/scivim/utils.py
+# /home/tanzious/scivim/python/scivim/utils.py
+# /home/tanzious/scivim/python/scivim/utils.py
+# /home/tanzious/scivim/python/scivim/utils.py
+# /home/tanzious/scivim/python/scivim/utils.py
+# /home/tanzious/scivim/python/scivim
+# /home/tanzious/scivim/python/scivim
+#this file is in /python/scivim/utils.py
 import os
 import pandas as pd
 import platform
