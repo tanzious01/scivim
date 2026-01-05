@@ -4,6 +4,9 @@
 -- /home/tanzious/scivim/lua/scivim/core/stats.lua
 -- /home/tanzious/scivim/lua/scivim/core/stats.lua
 -- /home/tanzious/scivim/lua/scivim/core/stats.lua
+-- /home/tanzious/scivim/lua/scivim/core/stats.lua
+-- /home/tanzious/scivim/lua/scivim/core/stats.lua
+-- /home/tanzious/scivim/lua/scivim/core/stats.lua
 -- /home/tanzious/scivim/lua/scivim/core
 -- /home/tanzious/scivim/lua/scivim/core
 -- =========================================================================

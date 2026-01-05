@@ -4,6 +4,9 @@
 # /home/tanzious/scivim/python/scivim/flush.py
 # /home/tanzious/scivim/python/scivim/flush.py
 # /home/tanzious/scivim/python/scivim/flush.py
+# /home/tanzious/scivim/python/scivim/flush.py
+# /home/tanzious/scivim/python/scivim/flush.py
+# /home/tanzious/scivim/python/scivim/flush.py
 # /home/tanzious/scivim/python/scivim
 # /home/tanzious/scivim/python/scivim
 #this file is in /python/scivim/flush.py

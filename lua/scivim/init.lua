@@ -4,6 +4,9 @@
 -- /home/tanzious/scivim/lua/scivim/init.lua
 -- /home/tanzious/scivim/lua/scivim/init.lua
 -- /home/tanzious/scivim/lua/scivim/init.lua
+-- /home/tanzious/scivim/lua/scivim/init.lua
+-- /home/tanzious/scivim/lua/scivim/init.lua
+-- /home/tanzious/scivim/lua/scivim/init.lua
 -- This file is in /lua/scivim/init.lua
 -- =========================================================================
 -- SCIVIM - Scientific Visualization for Neovim

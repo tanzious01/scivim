@@ -5,6 +5,9 @@
 -- /home/tanzious/scivim/lua/scivim/backend/paths.lua
 -- /home/tanzious/scivim/lua/scivim/backend/paths.lua
 -- /home/tanzious/scivim/lua/scivim/backend/paths.lua
+-- /home/tanzious/scivim/lua/scivim/backend/paths.lua
+-- /home/tanzious/scivim/lua/scivim/backend/paths.lua
+-- /home/tanzious/scivim/lua/scivim/backend/paths.lua
 -- /home/tanzious/scivim/lua/scivim/backend
 -- /home/tanzious/scivim/lua/scivim/backend
 -- lua/scivim/backend/paths.lua

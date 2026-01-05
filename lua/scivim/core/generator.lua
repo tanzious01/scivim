@@ -4,6 +4,9 @@
 -- /home/tanzious/scivim/lua/scivim/core/generator.lua
 -- /home/tanzious/scivim/lua/scivim/core/generator.lua
 -- /home/tanzious/scivim/lua/scivim/core/generator.lua
+-- /home/tanzious/scivim/lua/scivim/core/generator.lua
+-- /home/tanzious/scivim/lua/scivim/core/generator.lua
+-- /home/tanzious/scivim/lua/scivim/core/generator.lua
 -- This file is in /lua/scivim/core/generator.lua
 local M = {}
 local config = require("scivim.config")

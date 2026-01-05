@@ -4,6 +4,9 @@
 -- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
 -- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
 -- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
+-- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
+-- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
+-- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
 -- /home/tanzious/scivim/lua/scivim/ui
 -- /home/tanzious/scivim/lua/scivim/ui
 -- This file is in /lua/scivim/ui/wizard.lua
@@ -411,19 +414,6 @@ function M._open_dashboard()
     items = items,
     title = string.format(" %s %s [%s] ", state.chart.icon, state.chart.name, state.df),
     
-    layout = {
-      layout = {
-        box = "horizontal", width = 0.95, height = 0.95,
-        {
-          box = "vertical", border = "rounded", title = "{title}", width = 0.4,
-          { win = "input", height = 1, border = "bottom" },
-          { win = "list", border = "none" },
-        },
-        {
-          win = "preview", title = " Live Preview ", border = "rounded", width = 0.6,
-        },
-      }
-    },
     
     format = function(item)
       local ret = { 

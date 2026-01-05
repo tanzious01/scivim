@@ -3,6 +3,9 @@
 -- /home/tanzious/scivim/lua/scivim/backend/client.lua
 -- /home/tanzious/scivim/lua/scivim/backend/client.lua
 -- /home/tanzious/scivim/lua/scivim/backend/client.lua
+-- /home/tanzious/scivim/lua/scivim/backend/client.lua
+-- /home/tanzious/scivim/lua/scivim/backend/client.lua
+-- /home/tanzious/scivim/lua/scivim/backend/client.lua
 -- =========================================================================
 -- CLIENT - Persistent Python Daemon Client
 -- =========================================================================
@@ -193,6 +196,9 @@ return M
 -- /home/tanzious/scivim/lua/scivim/backend/paths.lua
 -- /home/tanzious/scivim/lua/scivim/backend/paths.lua
 -- /home/tanzious/scivim/lua/scivim/backend/paths.lua
+-- /home/tanzious/scivim/lua/scivim/backend/paths.lua
+-- /home/tanzious/scivim/lua/scivim/backend/paths.lua
+-- /home/tanzious/scivim/lua/scivim/backend/paths.lua
 -- /home/tanzious/scivim/lua/scivim/backend
 -- /home/tanzious/scivim/lua/scivim/backend
 -- lua/scivim/backend/paths.lua
@@ -214,6 +220,9 @@ function M.get_daemon_script()
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/core/adapters/data/pandas.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/data/pandas.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/data/pandas.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data/pandas.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data/pandas.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data/pandas.lua
@@ -258,6 +267,9 @@ return M
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data/polars.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data/polars.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data/polars.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/data/polars.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/data/polars.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/data/polars.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data
 -- /home/tanzious/scivim/lua/scivim/core/adapters/data
 
@@ -285,6 +297,9 @@ function M.normalize(df_var)
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot/bokeh.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot/bokeh.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot/bokeh.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/bokeh.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/bokeh.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/bokeh.lua
@@ -476,6 +491,9 @@ return M
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/plotly.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/plotly.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/plotly.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot/plotly.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot/plotly.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot/plotly.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot
 local M = {}
@@ -655,6 +673,9 @@ return M
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/seaborn.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/seaborn.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot/seaborn.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot/seaborn.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot/seaborn.lua
+-- /home/tanzious/scivim/lua/scivim/core/adapters/plot/seaborn.lua
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot
 -- /home/tanzious/scivim/lua/scivim/core/adapters/plot
 local M = {}
@@ -715,6 +736,9 @@ function M.show()
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/core/charts.lua
+-- /home/tanzious/scivim/lua/scivim/core/charts.lua
+-- /home/tanzious/scivim/lua/scivim/core/charts.lua
 -- /home/tanzious/scivim/lua/scivim/core/charts.lua
 -- /home/tanzious/scivim/lua/scivim/core/charts.lua
 -- /home/tanzious/scivim/lua/scivim/core/charts.lua
@@ -964,6 +988,9 @@ return M
 -- /home/tanzious/scivim/lua/scivim/core/context.lua
 -- /home/tanzious/scivim/lua/scivim/core/context.lua
 -- /home/tanzious/scivim/lua/scivim/core/context.lua
+-- /home/tanzious/scivim/lua/scivim/core/context.lua
+-- /home/tanzious/scivim/lua/scivim/core/context.lua
+-- /home/tanzious/scivim/lua/scivim/core/context.lua
 -- /home/tanzious/scivim/lua/scivim/core
 -- /home/tanzious/scivim/lua/scivim/core
 -- This file is in /lua/core/context.lua
@@ -1089,6 +1116,9 @@ function M._is_numeric(dtype)
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/core/generator.lua
+-- /home/tanzious/scivim/lua/scivim/core/generator.lua
+-- /home/tanzious/scivim/lua/scivim/core/generator.lua
 -- /home/tanzious/scivim/lua/scivim/core/generator.lua
 -- /home/tanzious/scivim/lua/scivim/core/generator.lua
 -- /home/tanzious/scivim/lua/scivim/core/generator.lua
@@ -1252,6 +1282,9 @@ return M
 -- /home/tanzious/scivim/lua/scivim/core/snippets.lua
 -- /home/tanzious/scivim/lua/scivim/core/snippets.lua
 -- /home/tanzious/scivim/lua/scivim/core/snippets.lua
+-- /home/tanzious/scivim/lua/scivim/core/snippets.lua
+-- /home/tanzious/scivim/lua/scivim/core/snippets.lua
+-- /home/tanzious/scivim/lua/scivim/core/snippets.lua
 -- /home/tanzious/scivim/lua/scivim/core
 -- /home/tanzious/scivim/lua/scivim/core
 -- This file is in /lua/core/snippets.lua
@@ -1401,6 +1434,9 @@ function M.delete(name)
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/core/stats.lua
+-- /home/tanzious/scivim/lua/scivim/core/stats.lua
+-- /home/tanzious/scivim/lua/scivim/core/stats.lua
 -- /home/tanzious/scivim/lua/scivim/core/stats.lua
 -- /home/tanzious/scivim/lua/scivim/core/stats.lua
 -- /home/tanzious/scivim/lua/scivim/core/stats.lua
@@ -1697,6 +1733,9 @@ return M
 -- /home/tanzious/scivim/lua/scivim/ui/explorer.lua
 -- /home/tanzious/scivim/lua/scivim/ui/explorer.lua
 -- /home/tanzious/scivim/lua/scivim/ui/explorer.lua
+-- /home/tanzious/scivim/lua/scivim/ui/explorer.lua
+-- /home/tanzious/scivim/lua/scivim/ui/explorer.lua
+-- /home/tanzious/scivim/lua/scivim/ui/explorer.lua
 -- /home/tanzious/scivim/lua/scivim/ui
 -- /home/tanzious/scivim/lua/scivim/ui
 --This file is in  lua/scivim/ui/explorer.lua
@@ -1951,6 +1990,9 @@ function M._render_ui()
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/ui/inspector.lua
+-- /home/tanzious/scivim/lua/scivim/ui/inspector.lua
+-- /home/tanzious/scivim/lua/scivim/ui/inspector.lua
 -- /home/tanzious/scivim/lua/scivim/ui/inspector.lua
 -- /home/tanzious/scivim/lua/scivim/ui/inspector.lua
 -- /home/tanzious/scivim/lua/scivim/ui/inspector.lua
@@ -2463,6 +2505,9 @@ return M
 -- /home/tanzious/scivim/lua/scivim/ui/layout.lua
 -- /home/tanzious/scivim/lua/scivim/ui/layout.lua
 -- /home/tanzious/scivim/lua/scivim/ui/layout.lua
+-- /home/tanzious/scivim/lua/scivim/ui/layout.lua
+-- /home/tanzious/scivim/lua/scivim/ui/layout.lua
+-- /home/tanzious/scivim/lua/scivim/ui/layout.lua
 -- /home/tanzious/scivim/lua/scivim/ui
 -- /home/tanzious/scivim/lua/scivim/ui
 
@@ -2506,6 +2551,9 @@ function M.toggle_scientific_mode()
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/ui/preview.lua
+-- /home/tanzious/scivim/lua/scivim/ui/preview.lua
+-- /home/tanzious/scivim/lua/scivim/ui/preview.lua
 -- /home/tanzious/scivim/lua/scivim/ui/preview.lua
 -- /home/tanzious/scivim/lua/scivim/ui/preview.lua
 -- /home/tanzious/scivim/lua/scivim/ui/preview.lua
@@ -2758,27 +2806,28 @@ return M
 -- /home/tanzious/scivim/lua/scivim/ui/transform.lua
 -- /home/tanzious/scivim/lua/scivim/ui/transform.lua
 -- /home/tanzious/scivim/lua/scivim/ui/transform.lua
--- /home/tanzious/scivim/lua/scivim/ui/transform.lua
--- /home/tanzious/scivim/lua/scivim/ui/transform.lua
 -- =========================================================================
--- LIVE TRANSFORM - Interactive UI (Polyglot: Python + SQL)
+-- LIVE TRANSFORM - Interactive UI (Polyglot: Python + Polars SQL)
+-- Optimized: sqlglot-transpilation & native Polars execution
 -- =========================================================================
 local M = {}
 
 local executor = require("scivim.backend.client")
-local context = require("scivim.core.context") -- [[ NEW: Required for Workspace Loading ]]
+local context = require("scivim.core.context")
 local Snacks = require("snacks")
 
 local ICONS = {
     spinner = { "⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏" },
     pandas  = "🐼",
-    polars  = "🐻",
+    polars  = "🧊🐻", -- UPDATED: Actual Polar Bear Branding
     lazy    = "🐨",
     global  = "🌍",
     prompt  = "  ", 
 }
 
--- 1. Standalone Highlights
+-- ----------------------------------------------------------------------------
+-- HIGHLIGHTS & STATE
+-- ----------------------------------------------------------------------------
 local function setup_highlights()
     local hls = {
         ScivimBorder      = { link = "FloatBorder" },
@@ -2795,14 +2844,11 @@ local function setup_highlights()
 end
 setup_highlights()
 
--- ----------------------------------------------------------------------------
--- STATE
--- ----------------------------------------------------------------------------
 local state = {
   current_code = "",
-  update_timer = nil, -- Timer for RPC Preview (fast debounce)
-  lsp_timer = nil,    -- Timer for Disk Write/LSP (slow debounce)
-  ctx = nil,          -- nil = Global Workspace Mode
+  update_timer = nil, 
+  lsp_timer = nil,    
+  ctx = nil,          
   preview_win = nil,
   input_win = nil,
   parent_win = nil,
@@ -2810,6 +2856,10 @@ local state = {
   spinner_timer = nil,
   spinner_idx = 1,
 }
+
+-- ----------------------------------------------------------------------------
+-- UI UTILS (Icons, Spinners, Centering)
+-- ----------------------------------------------------------------------------
 
 local function get_df_icon(ctx) 
     if not ctx then return ICONS.global end
@@ -2842,11 +2892,8 @@ end
 
 local function cleanup_state()
   stop_spinner()
-  -- Clean RPC Timer
-  if state.update_timer then pcall(function() state.update_timer:stop() end); pcall(function() state.update_timer:close() end); state.update_timer = nil end
-  -- Clean LSP Timer
-  if state.lsp_timer then pcall(function() state.lsp_timer:stop() end); pcall(function() state.lsp_timer:close() end); state.lsp_timer = nil end
-  
+  if state.update_timer then pcall(function() state.update_timer:stop() end); state.update_timer = nil end
+  if state.lsp_timer then pcall(function() state.lsp_timer:stop() end); state.lsp_timer = nil end
   if state.preview_win then pcall(function() state.preview_win:close() end); state.preview_win = nil end
   if state.input_win then
     if state.input_win.buf and vim.api.nvim_buf_is_valid(state.input_win.buf) then pcall(vim.cmd, "bdelete! " .. state.input_win.buf) end
@@ -2871,8 +2918,9 @@ local function center_lines(lines, win)
 end
 
 -- ----------------------------------------------------------------------------
--- UPDATE LOGIC
+-- UPDATE LOGIC (With Dynamic Resizing)
 -- ----------------------------------------------------------------------------
+
 local function update_preview(response)
   stop_spinner()
   if not state.preview_win or not state.preview_win.buf or not vim.api.nvim_buf_is_valid(state.preview_win.buf) then return end
@@ -2899,38 +2947,42 @@ local function update_preview(response)
   end
   
   vim.api.nvim_buf_set_lines(state.preview_win.buf, 0, -1, false, lines)
+
+  -- DYNAMIC RESIZING
+  local table_height = #lines
+  local max_allowed_h = math.floor(vim.o.lines * 0.7)
+  local final_h = math.max(3, math.min(table_height, max_allowed_h))
+  
+  if vim.api.nvim_win_is_valid(state.preview_win.win) then
+      pcall(vim.api.nvim_win_set_config, state.preview_win.win, {
+          height = final_h,
+          row = math.floor(vim.o.lines * 0.1) + 3 
+      })
+  end
 end
 
 local function trigger_request()
   start_spinner()
-  -- Logic: If state.ctx exists, send its details. If nil (Global), send empty string but keep the request type.
   local name = state.ctx and state.ctx.name or ""
   local lib = state.ctx and state.ctx.lib or "pandas"
   local is_lazy = state.ctx and state.ctx.is_lazy or false
   
-  executor.run_transform_async(
-    name,
-    lib,
-    is_lazy,
-    state.current_code,
-    function(response)
+  executor.run_transform_async(name, lib, is_lazy, state.current_code, function(response)
       if state.input_win and state.preview_win then
           vim.schedule(function() update_preview(response) end)
       end
-    end
-  )
+  end)
 end
 
 local function debounced_update(code)
   state.current_code = code
   if state.update_timer then state.update_timer:stop(); state.update_timer:close() end
   state.update_timer = vim.loop.new_timer()
-  -- Fast debounce (150ms) for Preview RPC
   state.update_timer:start(150, 0, vim.schedule_wrap(trigger_request))
 end
 
 -- ----------------------------------------------------------------------------
--- UI LAUNCHER & UTILS
+-- LSP GHOST FILE & STUB LOGIC
 -- ----------------------------------------------------------------------------
 
 local function patch_lsp_client(client)
@@ -2944,84 +2996,47 @@ local function patch_lsp_client(client)
     client._scivim_patched = true
 end
 
--- [[ UPDATED: Generate stub for ALL DataFrames in workspace ]]
 local function generate_workspace_stub(all_contexts, primary_ctx)
-  local lines = {}
-  -- Imports for all potential libs
-  table.insert(lines, "import pandas as pd")
-  table.insert(lines, "import numpy as np")
-  table.insert(lines, "import polars as pl")
-  table.insert(lines, "from polars import col, lit, when")
-  table.insert(lines, "")
+  local lines = { "import pandas as pd", "import numpy as np", "import polars as pl", "from polars import col, lit, when", "" }
 
-  -- Generate a class and instance for EVERY dataframe found
   for _, ctx in pairs(all_contexts) do
       local class_name = ctx.name .. "_Type"
-      local parent_class = "pd.DataFrame"
-      if ctx.lib == "polars" then
-          parent_class = ctx.is_lazy and "pl.LazyFrame" or "pl.DataFrame"
-      end
-
+      local parent_class = (ctx.lib == "polars") and (ctx.is_lazy and "pl.LazyFrame" or "pl.DataFrame") or "pd.DataFrame"
       table.insert(lines, string.format("class %s(%s):", class_name, parent_class))
-      
       if ctx.columns and #ctx.columns > 0 then
-          for _, col in ipairs(ctx.columns) do
-              -- Sanitize column names for Python syntax
-              if col:match("^[a-zA-Z_][a-zA-Z0-9_]*$") then
-                  local type_hint = "pd.Series"
-                  if ctx.lib == "polars" then type_hint = "pl.Expr" end
-                  table.insert(lines, string.format("    %s: %s", col, type_hint))
+          for _, col_n in ipairs(ctx.columns) do
+              if col_n:match("^[a-zA-Z_][a-zA-Z0-9_]*$") then
+                  local hint = (ctx.lib == "polars") and "pl.Expr" or "pd.Series"
+                  table.insert(lines, string.format("    %s: %s", col_n, hint))
               end
           end
-      else
-          table.insert(lines, "    pass")
-      end
-      table.insert(lines, "")
-      -- Instantiate it so LSP sees the variable
+      else table.insert(lines, "    pass") end
       table.insert(lines, string.format("%s: %s = %s()", ctx.name, class_name, class_name))
   end
-
-  -- If we focused on one specific DF, alias it to 'df'
-  if primary_ctx then
-      table.insert(lines, "")
-      table.insert(lines, string.format("df = %s", primary_ctx.name))
-  end
-
+  if primary_ctx then table.insert(lines, "\ndf = " .. primary_ctx.name) end
   return table.concat(lines, "\n")
 end
 
 local function setup_lsp_completion(input_buf, parent_buf, ctx)
   if not vim.api.nvim_buf_is_valid(input_buf) then return end
-  
-  -- 1. Aggressively flag this buffer to hide signatures
   vim.b[input_buf].scivim_hide_signature = true
 
-  -- 2. Hook into LspAttach to castrate the signature capability for this specific buffer
-  -- [FIX: This prevents the 'height must be positive Integer' crash]
   vim.api.nvim_create_autocmd("LspAttach", {
     buffer = input_buf,
     callback = function(args)
       local client = vim.lsp.get_client_by_id(args.data.client_id)
       if client then
-        -- DISABLE Signature Help Capability for this instance
-        if client.server_capabilities then
-          client.server_capabilities.signatureHelpProvider = nil
-        end
-        -- Patch handler just in case capability check is bypassed
+        if client.server_capabilities then client.server_capabilities.signatureHelpProvider = nil end
         patch_lsp_client(client) 
       end
     end
   })
 
-  -- 3. Ghost File Setup (Standard Scivim Logic)
   local start_path = vim.api.nvim_buf_get_name(parent_buf)
   if start_path == "" then start_path = vim.fn.getcwd() end
-  
-  -- Use system temp to prevent workspace pollution
   local root_markers = { "pyproject.toml", "requirements.txt", ".git", ".venv", "venv" }
   local root_dir = vim.fs.dirname(vim.fs.find(root_markers, { path = start_path, upward = true })[1] or start_path)
   
-  -- Optimization: Keep ghost file in root to allow relative imports in analysis
   local fake_path = root_dir .. "/__scivim_ghost_" .. os.time() .. ".py"
   state.ghost_path = fake_path
   
@@ -3030,216 +3045,133 @@ local function setup_lsp_completion(input_buf, parent_buf, ctx)
   local f = io.open(fake_path, "w"); if f then f:write(stub_content); f:close() end
   
   vim.api.nvim_buf_set_name(input_buf, fake_path)
-  vim.bo[input_buf].buftype = "" 
   vim.bo[input_buf].filetype = "python"
-  
-  vim.api.nvim_buf_set_lines(input_buf, 0, 0, false, vim.split(stub_content, '\n'))
-  
-  -- Silence the write message
+  vim.api.nvim_buf_set_lines(input_buf, 0, -1, false, vim.split(stub_content, '\n'))
   vim.api.nvim_buf_call(input_buf, function() vim.cmd("silent! write") end)
 
-  -- 4. Manual Client Attachment (Debounced)
   vim.schedule(function()
       if not vim.api.nvim_buf_is_valid(input_buf) then return end
-      
-      -- Prioritize Pyright/BasedPyright/Pyrefly
-      local attached = false
-      local available_clients = vim.lsp.get_clients({ bufnr = parent_buf }) -- Optimization: reuse parent clients
-      
+      local available_clients = vim.lsp.get_clients({ bufnr = parent_buf })
       for _, client in ipairs(available_clients) do
          if client.name == "pyright" or client.name == "basedpyright" or client.name == "pyrefly" then
              vim.lsp.buf_attach_client(input_buf, client.id)
-             attached = true
              break
          end
       end
-      
-      -- Fallback to global search if parent had no LSP
-      if not attached then
-          for _, client in ipairs(vim.lsp.get_clients()) do
-             if client.name == "pyright" or client.name == "basedpyright" then
-                 vim.lsp.buf_attach_client(input_buf, client.id)
-                 break 
-             end
-          end
-      end
   end)
-
-  -- 5. CMP Setup (ensure 'buffer' source is prioritized for local variables)
-  vim.defer_fn(function() 
-      local has_cmp, cmp = pcall(require, "cmp")
-      if has_cmp then 
-          cmp.setup.buffer({ 
-              enabled = true,
-              completion = { autocomplete = { cmp.TriggerEvent.TextChanged } },
-              sources = cmp.config.sources({ 
-                  { name = "nvim_lsp", priority = 1000 }, 
-                  { name = "buffer", priority = 500 } 
-              }) 
-          }) 
-      end 
-  end, 100)
 end
 
+-- ----------------------------------------------------------------------------
+-- UI MAIN & SUBSTITUTION LOGIC (POLARS SQL FIX)
+-- ----------------------------------------------------------------------------
+
 local function open_transform_ui(ctx)
-  state.ctx = ctx -- Can be nil for Global Mode
-  state.current_code = ""
-  state.parent_win = vim.api.nvim_get_current_win()
+  state.ctx = ctx; state.current_code = ""; state.parent_win = vim.api.nvim_get_current_win()
   local parent_buf = vim.api.nvim_get_current_buf()
-  
-  -- Dimensions
   local width = math.floor(vim.o.columns * 0.8)
   local height = math.floor(vim.o.lines * 0.8)
   local row = math.floor((vim.o.lines - height) / 2)
   local col = math.floor((vim.o.columns - width) / 2)
-  local input_h = 3
-  local preview_h = height - input_h
-
-  local title_text = get_title(ctx)
   
-  -- 1. Input Window
   state.input_win = Snacks.win({
     relative = "editor", row = row, col = col, width = width, height = 1,
-    border = "rounded", title = title_text, title_pos = "center",
+    border = "rounded", title = get_title(ctx), title_pos = "center",
     wo = { winhighlight = "FloatBorder:ScivimBorder,Title:ScivimTitle,Normal:ScivimPrompt", scrolloff = 0 },
     keys = { ["<Esc>"] = { "close", mode = {"n", "i"} }, ["<C-c>"] = { "close", mode = {"n", "i"} } }
   })
 
-  -- 2. Preview Window
   state.preview_win = Snacks.win({
-    relative = "editor", row = row + input_h, col = col, width = width, height = preview_h,
-    border = "rounded", wo = { winhighlight = "FloatBorder:ScivimBorder,Normal:NormalFloat" }, interactive = false
+    relative = "editor", row = row + 3, col = col, width = width, height = height - 3,
+    border = "rounded", wo = { winhighlight = "FloatBorder:ScivimBorder,Normal:NormalFloat", wrap = false }, interactive = false
   })
   
-  -- 3. Setup Input Buffer
   local input_buf = state.input_win.buf
-  -- [[ NEW: Pass ctx (could be nil) for workspace generation ]]
   setup_lsp_completion(input_buf, parent_buf, ctx)
   
-  -- Prompt Icon
   local ns_id = vim.api.nvim_create_namespace("scivim_prompt")
   local function set_prompt_extmark() 
       vim.api.nvim_buf_set_extmark(input_buf, ns_id, 0, 0, { virt_text = {{ ICONS.prompt, "ScivimInputPrefix" }}, virt_text_pos = "inline" }) 
   end
   
-  -- Stub calculation needs to check if we are global or local
   local all_data = context.load_all() or {}
   local stub_lines = vim.split(generate_workspace_stub(all_data, ctx), '\n')
   local content_offset = #stub_lines + 1
   
   vim.defer_fn(function() 
-      if vim.api.nvim_buf_is_valid(input_buf) and vim.api.nvim_win_is_valid(state.input_win.win) then 
-          local line_count = vim.api.nvim_buf_line_count(input_buf)
-          if line_count < content_offset then vim.api.nvim_buf_set_lines(input_buf, line_count, -1, false, { "" }) end
+      if vim.api.nvim_buf_is_valid(input_buf) then 
+          if vim.api.nvim_buf_line_count(input_buf) < content_offset then vim.api.nvim_buf_set_lines(input_buf, content_offset-1, -1, false, { "" }) end
           vim.api.nvim_win_set_cursor(state.input_win.win, {content_offset, 0})
-          vim.fn.winrestview({topline = content_offset, lnum = content_offset, col = 0})
           set_prompt_extmark() 
       end 
   end, 150)
   
   vim.api.nvim_set_current_win(state.input_win.win)
   vim.cmd("startinsert")
-  
-  -- Initialize Timer
   state.lsp_timer = vim.loop.new_timer()
 
-  -- Auto-update hook with OPTIMIZED IO DEBOUNCE
   vim.api.nvim_create_autocmd({"TextChanged", "TextChangedI"}, { 
       buffer = input_buf, 
       callback = function() 
           set_prompt_extmark()
-
-          -- 1. DEBOUNCED DISK WRITE (Fixes IO Thrashing for LSP)
           if state.lsp_timer then
               state.lsp_timer:stop()
               state.lsp_timer:start(500, 0, vim.schedule_wrap(function()
                  if vim.api.nvim_buf_is_valid(input_buf) then
-                     vim.api.nvim_buf_call(input_buf, function() 
-                         vim.cmd("silent! write") 
-                     end)
+                    local lines = vim.api.nvim_buf_get_lines(input_buf, 0, -1, false)
+                    local content = table.concat(lines, "\n")
+                    vim.loop.fs_open(state.ghost_path, "w", 438, function(err, fd)
+                        if not err then vim.loop.fs_write(fd, content, 0, function() vim.loop.fs_close(fd) end) end
+                    end)
                  end
               end))
           end
           
-          -- 2. GET TEXT & DETECT SQL (Immediate Logic)
-          local all_lines = vim.api.nvim_buf_get_lines(input_buf, 0, -1, false)
-          local user_lines = {}
-          for i = content_offset, #all_lines do if all_lines[i] then table.insert(user_lines, all_lines[i]) end end
+          local all_l = vim.api.nvim_buf_get_lines(input_buf, 0, -1, false)
+          local user_l = {}; for i = content_offset, #all_l do table.insert(user_l, all_l[i]) end
+          local full_text = table.concat(user_l, "\n")
           
-          local full_text = table.concat(user_lines, "\n")
-          
-          -- Dynamic SQL Syntax Switching
-          local first_word = full_text:match("^%s*(%w+)")
-          if first_word then
-              first_word = first_word:upper()
-              if vim.tbl_contains({"SELECT", "WITH", "PRAGMA", "DESCRIBE", "SHOW", "EXPLAIN"}, first_word) then
-                  if vim.bo[input_buf].filetype ~= "sql" then vim.bo[input_buf].filetype = "sql" end
-              else
-                  if vim.bo[input_buf].filetype ~= "python" then vim.bo[input_buf].filetype = "python" end
-              end
+          local first_w = full_text:match("^%s*(%w+)")
+          if first_w then
+              first_w = first_w:upper()
+              local is_sql = vim.tbl_contains({"SELECT", "WITH", "PRAGMA", "DESCRIBE", "SHOW", "EXPLAIN"}, first_w)
+              vim.bo[input_buf].filetype = is_sql and "sql" or "python"
           end
-
-          -- 3. TRIGGER PREVIEW (Fast Debounce)
           debounced_update(full_text) 
       end 
   })
-  trigger_request()
-  
-  -- Close/Accept Logic with SMART SUBSTITUTION
+
   local function accept_and_close()
-    local all_lines = vim.api.nvim_buf_get_lines(input_buf, 0, -1, false)
-    local user_lines = {}
-    for i = content_offset, #all_lines do if all_lines[i] then table.insert(user_lines, all_lines[i]) end end
-    local code = table.concat(user_lines, "\n")
-    
+    local all_l = vim.api.nvim_buf_get_lines(input_buf, 0, -1, false)
+    local user_l = {}; for i = content_offset, #all_l do table.insert(user_l, all_l[i]) end
+    local code = table.concat(user_l, "\n")
     local target_win = state.parent_win
     cleanup_state()
-    
-    if target_win and vim.api.nvim_win_is_valid(target_win) then
-        vim.api.nvim_set_current_win(target_win)
-    end
+    if target_win and vim.api.nvim_win_is_valid(target_win) then vim.api.nvim_set_current_win(target_win) end
     
     if code and code ~= "" then
-        -- Check if it was SQL or Python
-        local start_token = code:match("^%s*(%w+)")
-        local is_sql = false
-        if start_token and vim.tbl_contains({"SELECT", "WITH", "PRAGMA"}, start_token:upper()) then
-            is_sql = true
-        end
-
+        local first = code:match("^%s*(%w+)")
+        local is_sql = first and vim.tbl_contains({"SELECT", "WITH", "PRAGMA"}, first:upper())
         local full_code = code
-        if not is_sql then
-            -- [[ NEW: Smart Substitution ]]
-            -- Only replace 'df' if we are in a Specific Context
+
+        if is_sql then
+            -- [[ FIXED: POLARS SQLCONTEXT GENERATION ]]
+            local df_target = ctx and ctx.name or "df_sql_result"
+            full_code = table.concat({
+                "import polars as pl",
+                "# Native Polars SQL engine (sqlglot-powered)",
+                "sql_ctx = pl.SQLContext(register_globals=True)",
+                string.format("%s = sql_ctx.execute(\"\"\"%s\"\"\", eager=True)", df_target, code),
+            }, "\n")
+        else
             if ctx then
-                -- Be careful: don't replace 'df_sales' with 'ctx.name_sales'
-                -- 1. Replace 'df.' with 'name.'
-                if code:match("^%s*df%.") then
-                    full_code = code:gsub("^%s*df", ctx.name, 1)
-                -- 2. Replace chaining .function()
-                elseif code:match("^%s*%.") then
-                    full_code = ctx.name .. code
+                if code:match("^%s*df%.") then full_code = code:gsub("^%s*df", ctx.name, 1)
+                elseif code:match("^%s*%.") then full_code = ctx.name .. code
                 else
-                    -- 3. Replace isolated 'df'
                     full_code = code:gsub("([^%w_])df([^%w_])", "%1" .. ctx.name .. "%2")
                     full_code = full_code:gsub("^df([^%w_])", ctx.name .. "%1")
                     full_code = full_code:gsub("([^%w_])df$", "%1" .. ctx.name)
-                    -- If the code was just "df", replace it
                     if full_code == "df" then full_code = ctx.name end
                 end
-            end
-        else
-            -- SQL Substitution Logic
-            if ctx then
-                -- In specific mode, allow 'FROM df' shorthand
-                local clean_code = code:gsub("FROM%s+df", "FROM " .. ctx.name)
-                clean_code = clean_code:gsub("from%s+df", "FROM " .. ctx.name)
-                clean_code = clean_code:gsub("JOIN%s+df", "JOIN " .. ctx.name)
-                -- Wrap in duckdb call
-                full_code = string.format("import duckdb\n%s_sql = duckdb.sql(\"\"\"%s\"\"\").df()", ctx.name, clean_code)
-            else
-                -- In Global Mode, raw SQL, no wrapper auto-assign
-                full_code = string.format("import duckdb\nsql_res = duckdb.sql(\"\"\"%s\"\"\").df()", code)
             end
         end
         vim.api.nvim_put(vim.split(full_code, '\n'), "c", true, true)
@@ -3247,56 +3179,31 @@ local function open_transform_ui(ctx)
   end
   
   vim.keymap.set({"n", "i"}, "<CR>", function() vim.cmd("stopinsert"); accept_and_close() end, { buffer = input_buf })
-  vim.api.nvim_create_autocmd({"BufDelete", "BufWipeout"}, { buffer = input_buf, callback = function() vim.defer_fn(cleanup_state, 100) end, once = true })
 end
 
--- [[ UPDATED: Picker now includes Global Option ]]
 function M.inspect_transform(ctx_arg)
-  if ctx_arg then 
-    open_transform_ui(ctx_arg) 
+  if ctx_arg then open_transform_ui(ctx_arg) 
   else 
     local all_data = context.load_all()
-    local ctx_list = {}
-    if all_data then for _, v in pairs(all_data) do table.insert(ctx_list, v) end end
-    
-    if #ctx_list == 0 then 
-        vim.notify("No dataframes exposed via vim_expose()", vim.log.levels.WARN) 
-    elseif #ctx_list == 1 then 
-        open_transform_ui(ctx_list[1]) 
+    local ctx_list = {}; if all_data then for _, v in pairs(all_data) do table.insert(ctx_list, v) end end
+    if #ctx_list == 0 then vim.notify("No dataframes exposed", vim.log.levels.WARN) 
+    elseif #ctx_list == 1 then open_transform_ui(ctx_list[1]) 
     else 
-        local items = {}
-        -- Add Global Option First
-        table.insert(items, { 
-            text = "Global Workspace (All DataFrames)", 
-            ctx = nil, 
-            icon = ICONS.global 
-        })
-        
-        for _, c in ipairs(ctx_list) do 
-            table.insert(items, { 
-                text = c.name, 
-                ctx = c, 
-                icon = get_df_icon(c) 
-            }) 
-        end
-        
+        local items = { { text = "Global Workspace (All DataFrames)", ctx = nil, icon = ICONS.global } }
+        for _, c in ipairs(ctx_list) do table.insert(items, { text = c.name, ctx = c, icon = get_df_icon(c) }) end
         Snacks.picker.pick({
-            items = items,
-            title = "Select Context",
-            layout = "vscode",
-            format = function(item) 
-                return { { item.icon, "SnacksIcon" }, { " " }, { item.text, "Normal" } } 
-            end,
-            confirm = function(picker, item)
-                picker:close()
-                if item then open_transform_ui(item.ctx) end
-            end
+            items = items, title = "Select Context", layout = "vscode",
+            format = function(item) return { { item.icon, "SnacksIcon" }, { " " }, { item.text, "Normal" } } end,
+            confirm = function(picker, item) picker:close(); if item then open_transform_ui(item.ctx) end end
         })
     end 
   end
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
+-- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
+-- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
 -- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
 -- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
 -- /home/tanzious/scivim/lua/scivim/ui/wizard.lua
@@ -3944,6 +3851,9 @@ return M
 -- /home/tanzious/scivim/lua/scivim/config.lua
 -- /home/tanzious/scivim/lua/scivim/config.lua
 -- /home/tanzious/scivim/lua/scivim/config.lua
+-- /home/tanzious/scivim/lua/scivim/config.lua
+-- /home/tanzious/scivim/lua/scivim/config.lua
+-- /home/tanzious/scivim/lua/scivim/config.lua
 -- /home/tanzious/scivim/lua/scivim
 -- /home/tanzious/scivim/lua/scivim
 --This file is in /lua/config.lua
@@ -4084,6 +3994,9 @@ function M.is_enabled(feature)
 end
 
 return M
+-- /home/tanzious/scivim/lua/scivim/init.lua
+-- /home/tanzious/scivim/lua/scivim/init.lua
+-- /home/tanzious/scivim/lua/scivim/init.lua
 -- /home/tanzious/scivim/lua/scivim/init.lua
 -- /home/tanzious/scivim/lua/scivim/init.lua
 -- /home/tanzious/scivim/lua/scivim/init.lua
@@ -4289,6 +4202,9 @@ function M.setup(user_config)
 end
 
 return M
+-- /home/tanzious/scivim/OLD_ALLS/all.lua
+-- /home/tanzious/scivim/OLD_ALLS/all.lua
+-- /home/tanzious/scivim/OLD_ALLS/all.lua
 -- /home/tanzious/scivim/OLD_ALLS/all.lua
 -- /home/tanzious/scivim/OLD_ALLS/all.lua
 -- /home/tanzious/scivim/OLD_ALLS/all.lua

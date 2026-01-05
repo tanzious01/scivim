@@ -1,6 +1,9 @@
+-- /home/tanzious/scivim/lua/scivim/ui/transform.lua
+-- /home/tanzious/scivim/lua/scivim/ui/transform.lua
+-- /home/tanzious/scivim/lua/scivim/ui/transform.lua
 -- =========================================================================
--- LIVE TRANSFORM - Interactive UI (Polyglot: Python + SQL)
--- Optimized: Dynamic Resizing, Atomic IO, and LSP Hardening
+-- LIVE TRANSFORM - Interactive UI (Polyglot: Python + Polars SQL)
+-- Optimized: sqlglot-transpilation & native Polars execution
 -- =========================================================================
 local M = {}
 
@@ -11,7 +14,7 @@ local Snacks = require("snacks")
 local ICONS = {
     spinner = { "⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏" },
     pandas  = "🐼",
-    polars  = "🐻",
+    polars  = "🧊🐻", -- UPDATED: Actual Polar Bear Branding
     lazy    = "🐨",
     global  = "🌍",
     prompt  = "  ", 
@@ -134,14 +137,13 @@ local function update_preview(response)
     vim.list_extend(lines, center_lines(raw_lines, state.preview_win))
   end
   
-  -- Apply highlights
   if vim.api.nvim_win_is_valid(state.preview_win.win) then
       vim.api.nvim_win_set_option(state.preview_win.win, "winhighlight", "FloatBorder:"..border_hl..",Normal:NormalFloat")
   end
   
   vim.api.nvim_buf_set_lines(state.preview_win.buf, 0, -1, false, lines)
 
-  -- [[ ENHANCEMENT: DYNAMIC RESIZING ]]
+  -- DYNAMIC RESIZING
   local table_height = #lines
   local max_allowed_h = math.floor(vim.o.lines * 0.7)
   local final_h = math.max(3, math.min(table_height, max_allowed_h))
@@ -175,7 +177,7 @@ local function debounced_update(code)
 end
 
 -- ----------------------------------------------------------------------------
--- LSP GHOST FILE & STUB LOGIC (Restored)
+-- LSP GHOST FILE & STUB LOGIC
 -- ----------------------------------------------------------------------------
 
 local function patch_lsp_client(client)
@@ -239,7 +241,7 @@ local function setup_lsp_completion(input_buf, parent_buf, ctx)
   
   vim.api.nvim_buf_set_name(input_buf, fake_path)
   vim.bo[input_buf].filetype = "python"
-  vim.api.nvim_buf_set_lines(input_buf, 0, 0, false, vim.split(stub_content, '\n'))
+  vim.api.nvim_buf_set_lines(input_buf, 0, -1, false, vim.split(stub_content, '\n'))
   vim.api.nvim_buf_call(input_buf, function() vim.cmd("silent! write") end)
 
   vim.schedule(function()
@@ -255,7 +257,7 @@ local function setup_lsp_completion(input_buf, parent_buf, ctx)
 end
 
 -- ----------------------------------------------------------------------------
--- UI MAIN & SUBSTITUTION LOGIC (Restored)
+-- UI MAIN & SUBSTITUTION LOGIC (POLARS SQL FIX)
 -- ----------------------------------------------------------------------------
 
 local function open_transform_ui(ctx)
@@ -312,7 +314,6 @@ local function open_transform_ui(ctx)
                  if vim.api.nvim_buf_is_valid(input_buf) then
                     local lines = vim.api.nvim_buf_get_lines(input_buf, 0, -1, false)
                     local content = table.concat(lines, "\n")
-                    -- [[ ENHANCEMENT: NON-BLOCKING ATOMIC IO ]]
                     vim.loop.fs_open(state.ghost_path, "w", 438, function(err, fd)
                         if not err then vim.loop.fs_write(fd, content, 0, function() vim.loop.fs_close(fd) end) end
                     end)
@@ -347,7 +348,16 @@ local function open_transform_ui(ctx)
         local is_sql = first and vim.tbl_contains({"SELECT", "WITH", "PRAGMA"}, first:upper())
         local full_code = code
 
-        if not is_sql then
+        if is_sql then
+            -- [[ FIXED: POLARS SQLCONTEXT GENERATION ]]
+            local df_target = ctx and ctx.name or "df_sql_result"
+            full_code = table.concat({
+                "import polars as pl",
+                "# Native Polars SQL engine (sqlglot-powered)",
+                "sql_ctx = pl.SQLContext(register_globals=True)",
+                string.format("%s = sql_ctx.execute(\"\"\"%s\"\"\", eager=True)", df_target, code),
+            }, "\n")
+        else
             if ctx then
                 if code:match("^%s*df%.") then full_code = code:gsub("^%s*df", ctx.name, 1)
                 elseif code:match("^%s*%.") then full_code = ctx.name .. code
@@ -358,13 +368,6 @@ local function open_transform_ui(ctx)
                     if full_code == "df" then full_code = ctx.name end
                 end
             end
-        else
-            if ctx then
-                local clean = code:gsub("FROM%s+df", "FROM " .. ctx.name):gsub("from%s+df", "FROM " .. ctx.name):gsub("JOIN%s+df", "JOIN " .. ctx.name)
-                full_code = string.format("import duckdb\n%s_sql = duckdb.sql(\"\"\"%s\"\"\").df()", ctx.name, clean)
-            else
-                full_code = string.format("import duckdb\nsql_res = duckdb.sql(\"\"\"%s\"\"\").df()", code)
-            end
         end
         vim.api.nvim_put(vim.split(full_code, '\n'), "c", true, true)
     end
@@ -373,7 +376,6 @@ local function open_transform_ui(ctx)
   vim.keymap.set({"n", "i"}, "<CR>", function() vim.cmd("stopinsert"); accept_and_close() end, { buffer = input_buf })
 end
 
--- [[ UPDATED: Picker Logic Restored ]]
 function M.inspect_transform(ctx_arg)
   if ctx_arg then open_transform_ui(ctx_arg) 
   else 
